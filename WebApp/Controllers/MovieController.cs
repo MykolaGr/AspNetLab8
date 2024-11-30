@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Models;
 
-namespace WebApp
+namespace WebApp.Controllers
 {
     public class MovieController : Controller
     {
@@ -23,8 +23,10 @@ namespace WebApp
         {
             return View(await _context
                 .Movies
+                .OrderBy(m => m.Title)
+                .Skip(pageSize * (page-1))
                 .Take(pageSize)
-                .AsTracking()
+                .AsNoTracking()
                 .ToListAsync());
         }
 

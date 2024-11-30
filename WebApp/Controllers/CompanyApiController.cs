@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using WebApp.Model.Movies;
+using WebApp.Models;
 
 namespace WebApp.Controllers;
+
 [ApiController]
 [Route("/api/companies")]
-public class CompanyApiController: ControllerBase
+public class CompanyApiController : ControllerBase
 {
     private MoviesDbContext _context;
 
@@ -11,15 +15,15 @@ public class CompanyApiController: ControllerBase
     {
         _context = context;
     }
-
+    
     [HttpGet]
     public async Task<IActionResult> GetFiltered(string fragment)
     {
         return Ok(
             _context.ProductionCompanies
-                .Where(m => m.CompanyName != null && m.CompanyName.ToLower().Contains(fragment.ToLower())
-                    
-                )
+                .Where(m => m.CompanyName != null && m.CompanyName.ToLower().Contains(fragment.ToLower()))
+                .AsTracking()
+                .AsEnumerable()
         );
     }
 }

@@ -7913,19 +7913,19 @@
     ]
   },
   "packageFolders": {
-    "D:\\Users\\mykola.grygorenko\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\mykola.grygorenko\\RiderProjects\\AspNetLab8\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "D:\\c#\\AspNetLab8\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "D:\\Users\\mykola.grygorenko\\RiderProjects\\AspNetLab8\\WebApp\\WebApp.csproj",
-      "packagesPath": "D:\\Users\\mykola.grygorenko\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\mykola.grygorenko\\RiderProjects\\AspNetLab8\\WebApp\\obj\\",
+      "projectPath": "D:\\c#\\AspNetLab8\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "D:\\c#\\AspNetLab8\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "D:\\Users\\mykola.grygorenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7945,6 +7945,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -7999,7 +8004,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\user\\.dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
